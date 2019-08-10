@@ -1,52 +1,18 @@
-## 使用Postman测试本地API
-
+## MyBatis 基础练习
 ### 练习描述
-- 在`com.employee.crud`中完成Employee的**CRUD**(增删改查)四个接口的实现,并使用Postman测试本地API
-- 要求接口路径为`http://localhost:8080/employees`,其GET方法查询到的Employee数据如下所示：
-
-```
-[
-    {
-        "id": 0,
-        "name": "小明",
-        "age": 20,
-        "gender": "男"
-    },
-    {
-        "id": 1,
-        "name": "小红",
-        "age": 19,
-        "gender": "女"
-    },
-    {
-        "id": 2,
-        "name": "小智",
-        "age": 15,
-        "gender": "男"
-    },
-    {
-        "id": 3,
-        "name": "小钢",
-        "age": 16,
-        "gender": "女"
-    },
-    {
-        "id": 4,
-        "name": "小夏",
-        "age": 15,
-        "gender": "女"
-    }
-]
-
-```
+- 编写UserMapper和UserController文件，完成所需接口，数据结构如下图所示
+可使用postman对接口进行测试，如选择操作的结果为：
+![](result.png)
+- 在本地数据库中创建名为user的数据库，创建user表，数据结构为上图所示，并在application.properties中修改相关配置。
 
 ### 环境描述
 - java8
 - Intellij-IDEA
 
 ### 如何开始
-- 克隆模版库
-- 启动项目，若出现 Tomcat started on port(s): 8080 (http) 字样，说明项目启动成功
+克隆模版库,在UserMapper文件中下完成需求
+- 输出规范
+- 完成需求的代码
 
-### 输出规范
-- 项目根目录下创建result文件，其中包含对本地API增删改查四个接口测试的所有Postman截图
+### 结果
+- 将增删改查的测试截图放在根目录的result文件中
